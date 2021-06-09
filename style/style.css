@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+.container {
+  display: flex;
+  background-color: blue;
+  width: 100%;
+  min-height: 100vh;
+}
+.navigation-container {
+  width: 20%;
+  max-width: 100px;
+  min-width: 70px;
+  background-color: pink;
+}
+.main {
+  background-color: coral;
+  flex: 1;
+}
+.trending-tweets-sidebar {
+  background-color: purple;
+  flex: 1;
+}
