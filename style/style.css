@@ -14,10 +14,36 @@ body {
   background-color: pink;
 }
 .main {
+  display: flex;
+  flex-direction: column;
   background-color: coral;
   flex: 1;
 }
-.trending-tweets-sidebar {
+.sidebar {
   background-color: purple;
   flex: 1;
+}
+.tweets-search {
+  height: 70px;
+  margin: 20px;
+  background-color: yellow;
+}
+.tweets-list {
+  height: 500px;
+  margin: 20px;
+  background-color: green;
+}
+.tweet-container {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  background-color: gray;
+  margin: 10px;
+}
+.trending-tweets-sidebar {
+  display: flex;
+  width: 200px;
+  height: 500px;
+  margin: 20px;
+  background-color: white;
 }
