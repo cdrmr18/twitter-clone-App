@@ -6,6 +6,7 @@ body {
   height: 40px;
   border-radius: 50%;
   background-position: cover;
+  border: 1px solid #beef9e;
 }
 .container {
   display: flex;
@@ -16,30 +17,45 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  background-color: coral;
   flex: 1;
+}
+.home-link {
+  border-right: 3px solid #beef9e;
+}
+.home-link,
+.hashtag {
+  font-size: 16px;
+  color: #beef9e;
+}
+.logo {
+  color: #fff;
+  font-size: 36px;
 }
 .logo,
 .home-link,
 .hashtag,
-.avatar {
-  margin-bottom: 8px;
+.avatar-container {
+  display: flex;
+  margin-bottom: 12px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 98%;
 }
 .navigation {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-size: 24px;
-  color: #beef9e;
   margin-top: 32px;
 }
 .navigation-container {
   width: 20%;
   max-width: 100px;
   min-width: 70px;
+  border-right: 1px solid #beef9e;
 }
 .sidebar {
-  background-color: purple;
   flex: 1;
 }
 .tweet-container {
@@ -52,12 +68,16 @@ body {
 .tweets-list {
   height: 500px;
   margin: 20px;
-  background-color: green;
 }
 .tweets-search {
-  height: 70px;
-  margin: 20px;
-  background-color: yellow;
+  margin: 32px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+.tweets-search i {
+  color: white;
+  font-size: 30px;
 }
 .trending-tweets-sidebar {
   display: flex;
@@ -65,4 +85,10 @@ body {
   height: 500px;
   margin: 20px;
   background-color: white;
+}
+#user-search-input {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
 }
