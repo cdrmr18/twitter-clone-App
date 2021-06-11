@@ -69,15 +69,16 @@ body {
   height: 500px;
   margin: 20px;
 }
-.tweets-search {
+.tweets-search-container {
   margin: 32px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid white;
 }
-.tweets-search i {
+.tweets-search-container i {
   color: white;
   font-size: 30px;
+  padding-left: 8px;
 }
 .trending-tweets-sidebar {
   display: flex;
@@ -91,4 +92,9 @@ body {
   border: none;
   background-color: transparent;
   font-size: 30px;
+  color: white;
+  padding: 0 10px;
+}
+#user-search-input:focus {
+  outline: none;
 }
