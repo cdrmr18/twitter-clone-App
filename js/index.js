@@ -3,7 +3,7 @@ const URL = 'http://localhost:3000/tweets'
 const searchIcon = document.getElementById('searchIcon');
 
 const onEnter = (e) => {
-    if (e.code === "Enter") {
+    if (e.key === "Enter") {
         getTwitterData();
     }
 }
@@ -18,10 +18,17 @@ const getTwitterData = () => {
     .then((response) => {
         return response.json();
     }).then((data) => {
-            console.log(data);
+        buildTweets(data);
     }).catch((err) => {
         console.log('Fetch Error :-S', err);
     });
+}
+
+const buildTweets = (tweets) => {
+    tweets.map();
+// - Use string literals to replace html with the text from each tweet
+// - Replace html content inside `.tweets-list`
+
 }
 
 searchIcon.addEventListener('click', getTwitterData);

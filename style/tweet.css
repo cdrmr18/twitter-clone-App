@@ -3,7 +3,7 @@
   flex-direction: column;
   margin: 10px;
   border-radius: 20px;
-  border: 1px solid #beef9e;
+  border: 1px solid #47525d;
   overflow: hidden;
 }
 .tweet-date-container {
@@ -27,7 +27,8 @@
   object-fit: cover;
 }
 .tweets-list {
-  height: 500px;
+  margin: 20px;
+  margin-top: 0;
 }
 .tweet-text-container {
   margin: 20px 20px 0 20px;
