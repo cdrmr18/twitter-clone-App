@@ -1,0 +1,10 @@
+.sidebar {
+  flex: 1;
+}
+.trending-tweets-sidebar {
+  display: flex;
+  width: 200px;
+  height: 500px;
+  margin: 20px;
+  background-color: white;
+}

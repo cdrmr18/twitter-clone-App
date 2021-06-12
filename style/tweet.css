@@ -1,0 +1,31 @@
+.tweet-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 20px;
+  border: 1px solid white;
+  overflow: hidden;
+}
+.tweet-date-container {
+  margin: 10px 20px;
+  color: #47525d;
+  font-size: 12px;
+}
+.tweet-images-container {
+  margin: 20px 20px 0 20px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.tweets-list {
+  height: 500px;
+}
+.tweet-text-container {
+  margin: 20px 20px 0 20px;
+  font-size: 16px;
+  color: #fff;
+}
+.tweet-user-info {
+  height: 20px;
+  background-color: aquamarine;
+}

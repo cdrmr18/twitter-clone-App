@@ -1,0 +1,22 @@
+.tweets-search-container {
+  margin: 32px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+.tweets-search-container i {
+  color: white;
+  font-size: 30px;
+  padding-left: 8px;
+}
+#user-search-input {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: white;
+  padding: 0 10px;
+}
+#user-search-input:focus {
+  outline: none;
+}

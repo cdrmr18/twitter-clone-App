@@ -1,13 +1,6 @@
 body {
   margin: 0;
 }
-.avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-position: cover;
-  border: 1px solid #beef9e;
-}
 .container {
   display: flex;
   background-color: #001524;
@@ -18,103 +11,4 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-}
-.home-link {
-  border-right: 3px solid #beef9e;
-}
-.home-link,
-.hashtag {
-  font-size: 16px;
-  color: #beef9e;
-}
-.logo {
-  color: #fff;
-  font-size: 36px;
-}
-.logo,
-.home-link,
-.hashtag,
-.avatar-container {
-  display: flex;
-  margin-bottom: 12px;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  width: 98%;
-}
-.navigation {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 32px;
-}
-.navigation-container {
-  width: 20%;
-  max-width: 100px;
-  min-width: 70px;
-  border-right: 1px solid #beef9e;
-}
-.sidebar {
-  flex: 1;
-}
-.trending-tweets-sidebar {
-  display: flex;
-  width: 200px;
-  height: 500px;
-  margin: 20px;
-  background-color: white;
-}
-.tweet-container {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  border-radius: 20px;
-  border: 1px solid white;
-  overflow: hidden;
-}
-.tweet-date-container {
-  margin: 10px 20px;
-  color: #47525d;
-  font-size: 12px;
-}
-.tweet-images-container {
-  margin: 20px 20px 0 20px;
-  height: 200px;
-  border: 1px solid white;
-  border-radius: 20px;
-}
-.tweets-list {
-  height: 500px;
-}
-.tweets-search-container {
-  margin: 32px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid white;
-}
-.tweets-search-container i {
-  color: white;
-  font-size: 30px;
-  padding-left: 8px;
-}
-.tweet-text-container {
-  margin: 20px 20px 0 20px;
-  font-size: 16px;
-  color: #fff;
-}
-.tweet-user-info {
-  height: 20px;
-  background-color: aquamarine;
-}
-#user-search-input {
-  flex: 1;
-  border: none;
-  background-color: transparent;
-  font-size: 30px;
-  color: white;
-  padding: 0 10px;
-}
-#user-search-input:focus {
-  outline: none;
 }
