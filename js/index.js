@@ -2,6 +2,11 @@ const URL = 'http://localhost:3000/tweets'
 
 const searchIcon = document.getElementById('searchIcon');
 
+const onEnter = (e) => {
+    if (e.code === "Enter") {
+        getTwitterData();
+    }
+}
 // retrieve data from twitter api
 const getTwitterData = () => {
     const query = document.getElementById('user-search-input').value;
