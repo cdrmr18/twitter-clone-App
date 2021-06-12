@@ -6,14 +6,34 @@
   width: 300px;
   height: 500px;
   margin: 30px 20px 20px 20px;
-  background-color: white;
+  background-color: #757575;
   border: 1px solid #47525d;
   border-radius: 40px;
   overflow: hidden;
 }
 .tweets-trending {
-  height: 300px;
-  background: #f2f2f2;
+  height: 200px;
+  background: #001524;
   margin: 10px;
   border-radius: 40px;
+  color: #beef9e;
+  padding-top: 20px;
+}
+.tweets-trending h4 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.tweets-trending ul li {
+  padding: 8px 0;
+  padding-left: 20px;
+  font-size: 24px;
+  border-top: 1px solid #757575;
+  cursor: pointer;
+}
+.tweets-trending ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
 }
