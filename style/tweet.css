@@ -11,6 +11,9 @@
   color: #47525d;
   font-size: 12px;
 }
+.tweet-user-fullname {
+  font-size: 10px;
+}
 .tweet-images-container {
   margin: 20px 20px 0 20px;
   height: 200px;
@@ -36,6 +39,7 @@
   height: 30px;
   border-radius: 50%;
   margin-right: 10px;
+  margin-top: 10px;
 }
 .tweet-user-name-container {
   color: white;
@@ -43,10 +47,11 @@
   flex-direction: column;
 }
 .tweet-user-username {
-  font-size: 12px;
+  font-size: 8px;
 }
 .tweet-user-info {
   height: 20px;
   display: flex;
-  margin: 12px 0 20px 12px;
+  align-items: center;
+  margin: 10px 0 0 12px;
 }
