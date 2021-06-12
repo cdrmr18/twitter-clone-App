@@ -1,9 +1,9 @@
 body {
   margin: 0;
+  background-color: #001524;
 }
 .container {
   display: flex;
-  background-color: #001524;
   width: 100%;
   min-height: 100vh;
 }
