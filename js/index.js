@@ -1,9 +1,14 @@
 const URL = 'http://localhost:3000/tweets'
 
+const searchIcon = document.getElementById('searchIcon');
+
 // retrieve data from twitter api
 const getTwitterData = () => {
-    const url = 'http://localhost:3000/tweets?query=beyonce&max_results=10';
+    const query = document.getElementById('user-search-input').value;
+    const encodedQuery = encodeURIComponent(query);
+    const url = `${URL}?query=${encodedQuery}&max_results=10`;
 
+    if (!query) return;
     fetch(url)
     .then((response) => {
         return response.json();
@@ -13,3 +18,5 @@ const getTwitterData = () => {
         console.log('Fetch Error :-S', err);
     });
 }
+
+searchIcon.addEventListener('click', getTwitterData);

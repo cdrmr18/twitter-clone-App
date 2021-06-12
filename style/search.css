@@ -8,6 +8,7 @@
   color: #757575;
   font-size: 30px;
   padding-left: 8px;
+  cursor: pointer;
 }
 #user-search-input {
   flex: 1;
