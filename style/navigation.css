@@ -4,6 +4,10 @@
   justify-content: center;
   align-items: center;
   margin-top: 32px;
+  position: fixed;
+  width: 20%;
+  max-width: 100px;
+  min-width: 70px;
 }
 .navigation .avatar {
   width: 40px;
