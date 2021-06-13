@@ -42,4 +42,8 @@ const buildTweets = (tweets) => {
    document.querySelector('.tweets-list').innerHTML = twitterContent;
 }
 
+const setTrendSearch = (e) => {
+    document.getElementById('user-search-input').value = e.innerText;
+    getTwitterData();
+}
 searchIcon.addEventListener('click', getTwitterData);
