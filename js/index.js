@@ -11,7 +11,7 @@ const onEnter = (e) => {
 const getTwitterData = () => {
     const query = document.getElementById('user-search-input').value;
     const encodedQuery = encodeURIComponent(query);
-    const url = `${URL}?query=${encodedQuery}&max_results=10&lan=en&tweet.fields=text&expansions=referenced_tweets.id&user.fields=name,username`;
+    const url = `${URL}?query=${encodedQuery}&max_results=10&lang=en&tweet.fields=text,attachments&expansions=attachments.media_keys&media.fields=url,preview_image_url&user.fields=name,username`;
 
     if (!query) return;
     fetch(url)
@@ -58,10 +58,6 @@ const buildTweets = (tweets) => {
 
     
    document.querySelector('.tweets-list').innerHTML = twitterContent;
-    
-// - Use string literals to replace html with the text from each tweet
-// - Replace html content inside `.tweets-list`
-
 }
 
 searchIcon.addEventListener('click', getTwitterData);
