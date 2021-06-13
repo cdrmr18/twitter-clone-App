@@ -1,3 +1,19 @@
+.next-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px 20px 20px;
+  padding: 6px;
+  border-radius: 10px;
+  height: 32px;
+  border: 1px solid #47525d;
+  transition: all ease-in-out 0.15s;
+  color: #47525d;
+  cursor: pointer;
+}
+.next-page-container:hover {
+  background-color: #beef9e;
+}
 .tweet-container {
   display: flex;
   flex-direction: column;
