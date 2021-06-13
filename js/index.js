@@ -12,30 +12,31 @@ const onEnter = (e) => {
 
 const toNextPage = () => {
     if (nextPageUrl) {
-        getTwitterData();
+        getTwitterData(true);
     }
 }
 // retrieve data from twitter api
-const getTwitterData = () => {
+const getTwitterData = (nextPage=false) => {
+    console.log(nextPage)
     const query = document.getElementById('user-search-input').value;
     if (!query) return;
     const encodedQuery = encodeURIComponent(query);
     let url = `${URL}?query=${encodedQuery}&max_results=10&lang=en`;
     
-    if (nextPageUrl) {
+    if (nextPage && nextPageUrl) {
         url = `${url}&next_token=${nextPageUrl}`;
     }
     fetch(url)
     .then((response) => {
         return response.json();
     }).then((data) => {
-        buildTweets(data.data);
+        buildTweets(data.data, nextPage);
         console.log(data)
         saveNextPage(data.meta);
     })
 }
 
-const buildTweets = (tweets) => {
+const buildTweets = (tweets, nextPage) => {
     let twitterContent = "";
     tweets.map((tweet) => {
         twitterContent += `
@@ -51,8 +52,11 @@ const buildTweets = (tweets) => {
         `;
     });
 
-    
-   document.querySelector('.tweets-list').innerHTML = twitterContent;
+   if (nextPage) {
+        document.querySelector('.tweets-list').insertAdjacentHTML('beforeend', twitterContent);
+   } else {
+        document.querySelector('.tweets-list').innerHTML = twitterContent;
+   }
 }
 
 const saveNextPage = (metaData) => {
