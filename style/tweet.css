@@ -1,5 +1,4 @@
 .next-page-container {
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 20px 20px 20px;
@@ -10,6 +9,7 @@
   transition: all ease-in-out 0.15s;
   color: #47525d;
   cursor: pointer;
+  display: none;
 }
 .next-page-container:hover {
   background-color: #beef9e;

@@ -56,12 +56,13 @@ const buildTweets = (tweets, nextPage) => {
         document.querySelector('.tweets-list').insertAdjacentHTML('beforeend', twitterContent);
    } else {
         document.querySelector('.tweets-list').innerHTML = twitterContent;
-   }
+   }  
 }
 
 const saveNextPage = (metaData) => {
     if (metaData.next_token) {
         nextPageUrl = `${metaData.next_token}`;
+        document.querySelector('.next-page-container').style.display = 'flex';
     } else {
         nextPageUrl = null;
     }
